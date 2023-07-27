@@ -13,6 +13,7 @@ export const resolveLocalHostnamesWithFetch: MDNSResolver = async (
   for (let i = 0; i < candidates.length; i += FETCH_CONCURRENCY_LIMIT) {
     const chunk = candidates.slice(i, i + FETCH_CONCURRENCY_LIMIT);
     const abortController = new AbortController();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const start = performance.now();
 
     setTimeout(() => {
