@@ -125,6 +125,7 @@ export function Form({
         setAdvancedSettings(true);
       }
     }
+   // eslint-disable-next-line react-hooks/exhaustive-deps 
   }, [form.values.countryCode, form.values.gender]);
 
   return (
