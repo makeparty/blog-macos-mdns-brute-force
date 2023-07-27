@@ -13,6 +13,7 @@ export function useLocalStorageFormCache(
         form.setValues(JSON.parse(storedValue));
       } catch (e) {}
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
