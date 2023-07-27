@@ -18,6 +18,7 @@ export const resolveLocalHostnamesWithFetch: MDNSResolver = async (
 
     setTimeout(() => {
       abortController.abort();
+      console.log(start);
     }, FETCH_RESOLVE_TIMEOUT);
 
     await Promise.all(
